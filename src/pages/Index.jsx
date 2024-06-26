@@ -1,4 +1,4 @@
-import { Container, VStack, Heading, Text, Button, Box, Flex, Spacer, IconButton } from "@chakra-ui/react";
+import { Container, VStack, Heading, Text, Button, Box, Flex, IconButton } from "@chakra-ui/react";
 import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import { FaRunning, FaDumbbell, FaHeartbeat } from "react-icons/fa";
 
@@ -25,6 +25,9 @@ const Index = () => {
         <Link to="/log-workout">
           <Button colorScheme="teal" size="lg">Log Workout</Button>
         </Link>
+        <Link to="/progress-tracking">
+          <Button colorScheme="teal" size="lg">Track Progress</Button>
+        </Link> {/* Add button to navigate to progress tracking */}
       </VStack>
     </Container>
   );
